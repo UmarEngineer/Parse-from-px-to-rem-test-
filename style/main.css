@@ -1,0 +1,132 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.5rem;
+   border-radius: 10px;
+}
+
+body{
+   background: linear-gradient( rgb(126, 126, 126), rgb(172, 94, 94))
+}
+
+.container{
+   max-width: 700px;
+   height: 400px;
+   background-color: aliceblue;
+   width: 100%;
+   margin: 140px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+}
+
+form{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 10px;
+   column-gap: 5px;
+   max-width: 450px;
+   justify-items: center;
+}
+
+.first,
+.second{
+   display: flex;
+   column-gap: 20px;
+}
+
+
+input{
+   height: 60px;
+   border: none;
+}
+
+#px,
+#rem{
+   border: none;
+   border-bottom: 5px solid orange;
+   padding-left: 10px;
+}
+
+#px,
+#pxReadonly{
+   grid-area: 1fr;
+}
+
+::placeholder{
+   color: rebeccapurple;
+   padding-left: 15px;
+   font-size: 1.2rem;
+   opacity: 1;
+}
+
+#pxReadonly,
+#remReadonly{
+   width: 80px;
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   border-bottom: 5px solid rebeccapurple;
+}
+
+.button{
+   position: absolute;
+   left:50px;
+   top: 180px;
+   width: 45px;
+   border: 2px solid orange rebeccapurple;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   #px,
+   #rem{
+      width: 400px;
+   }
+
+   .button{
+      left: 20px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   ::placeholder{
+      font-size: 1rem;
+   }
+   #px,
+   #rem{
+      width: 300px;
+   }
+
+   .button{
+      width: 100px;
+      left: auto;
+      top: 300px;
+   }
+}
+@media screen and (max-width: 500px) {
+   ::placeholder{
+      font-size: 0.8rem;
+      padding-left: 0;
+   }
+   #pxReadonly,
+   #remReadonly{
+      font-size: 1rem;
+   }
+   #px,
+   #rem{
+      width: 200px;
+   }
+
+   .button{
+      width: 100px;
+      left: auto;
+      top: 300px;
+   }
+}
