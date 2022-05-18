@@ -6,6 +6,7 @@
    font-family: 'Courier New', Courier, monospace;
    font-size: 1.5rem;
    border-radius: 10px;
+   box-sizing: border-box;
 }
 
 body{
@@ -72,6 +73,8 @@ input{
    justify-content: center;
    justify-items: center;
    border-bottom: 5px solid rebeccapurple;
+   font-weight: 600;
+   color: orange;
 }
 
 .button{
@@ -143,12 +146,15 @@ input{
 }
 @media screen and (max-width: 500px) {
    ::placeholder{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       padding-left: 0;
    }
    #pxReadonly,
    #remReadonly{
-      font-size: 1rem;
+      font-size: 0.9rem;
+      padding: 5px ;
+      text-align: center;
+      font-weight: 700;
    }
 
    .container{
@@ -177,4 +183,11 @@ input{
       display: flex;
       column-gap: 10px;
    }
+
+   ::placeholder{
+      font-size: 0.65rem;
+   }
+
+
+
 }
