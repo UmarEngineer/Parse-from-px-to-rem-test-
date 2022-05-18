@@ -79,7 +79,29 @@ input{
    left:50px;
    top: 180px;
    width: 45px;
-   border: 2px solid orange rebeccapurple;
+   border: 3px solid;
+   border-color:orange orange rebeccapurple rebeccapurple ;
+}
+
+.icons{
+   position: absolute;
+   top: 310px;
+}
+
+.icons a{
+   text-decoration: none;
+}
+
+.icon1{
+   color: rebeccapurple;
+   width: 30px;
+   height: 30px;
+}
+
+.icon2{
+   color: orange;
+   width: 30px;
+   height: 30px;
 }
 
 
@@ -111,7 +133,12 @@ input{
    .button{
       width: 100px;
       left: auto;
-      top: 300px;
+      top: 290px;
+   }
+
+   .icons{
+      top: 350px;
+      right: 30px;
    }
 }
 @media screen and (max-width: 500px) {
@@ -136,5 +163,18 @@ input{
       width: 100px;
       left: auto;
       top: 300px;
+   }
+}
+
+@media screen and (max-width: 400px){
+   .icon1,
+   .icon2{
+      width: 20px;
+      height: 20px;
+   }
+
+   .icons{
+      display: flex;
+      column-gap: 10px;
    }
 }
