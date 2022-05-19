@@ -21,23 +21,10 @@ function f2() {
 let first = document.querySelector('.first');
 let second = document.querySelector('.second');
 const btn = document.querySelector('.button');
-let k = 0;
 
-function f3(){
-
-   if(k == 0 ){
-      first.style.order = "2";
-      second.style.order = "1";
-      k = 1;
-   }
-
-   else if( k == 1){
-      first.style.order = "1";
-      second.style.order = "2";
-      k = 0;
-   }
-
-}
+btn.addEventListener('click', function (){
+   first.classList.toggle('order');
+})
 
 
 
