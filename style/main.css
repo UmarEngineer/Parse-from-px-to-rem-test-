@@ -10,7 +10,8 @@
 }
 
 body{
-   background: linear-gradient( rgb(126, 126, 126), rgb(172, 94, 94))
+   background: linear-gradient( rgb(126, 126, 126), rgb(172, 94, 94));
+   background-repeat: no-repeat;
 }
 
 .container{
